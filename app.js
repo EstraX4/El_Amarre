@@ -15,7 +15,7 @@ btnSi.addEventListener('click', function(e) {
 
     divModoSexo.style.display = 'block';
     const cancion = new Audio('img\\modo_hot.mp3');
-    //cancion.play();
+    cancion.play();
 });
 
 divModoSexo.addEventListener('click', function(e) {
