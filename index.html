@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- PARA PODER USAR ACENTOS Y Ñ -->
+    <meta charset="utf-8" />
+    <!-- La étiqueta Title coloca el texto como titulo de la pestaña -->
+    <title>¿Quieres ser mi Sempai/Waifu?</title>
+
+    <!-- Con esta etiqueta link y la propiedad rel="stylesheet"  haciendo haciendo referencia al css podemos unir el archivo de estilo con el HTML. De preferencia se debe cargar antes que el HTML, por eso va dentro de <head> -->
+    <link rel="stylesheet" href="app.css" />
+    <!-- Con script asociamos el archivo JavaScript al archivo HTML. 
+        Al ponerlo en el HEAD, este carga antes del body. 
+        Al ponerlo después, este carga después de lo que se ve en la página. 
+        Es importante determinar que comportamiento queremos.
+        -->
+    <script src="antesdebody.js"></script>
+  </head>
+  <body>
+    <!-- 
+        Con div podemos hacer secciones de elementos HTML. Piensa en Div como un contenedor que en este caso recibe el estilo la clase de CSS modo_sexo
+    -->
+    <div class="modo_sexo">
+      <h1>MODO SEXO ACTIVADO :3</h1>
+      <!-- H1 para titulos -->
+      <img
+        src="https://i.pinimg.com/originals/c5/e3/c9/c5e3c9b5260daa31f5a4ab03ff048ece.png"
+      />
+      <!-- Ponemos una imagen -->
+    </div>
+
+    <!-- Con la etiqueta mostramos un video a los usuarios.
+    
+    Los navegadores actuales no permiten la autoreprodución de videos con sonido. En este caso, se carga un video de una carpeta del proyecto.
+    -->
+    <video width="600" height="350" controls loop>
+      <source src="img\video.mp4" type="video/mp4" />
+      NO SE PUEDE VER ESTE VIDEO
+    </video>
+
+    <h1>DI QUE SÍ POR FAVOR</h1>
+    <!-- Los buttons nos generan botones accionables para el usuario. Estos reciben su estilo por medioo de su id -->
+    <button id="btn_si">SÍ</button>
+    <button id="btn_no">no :(</button>
+  </body>
+
+  <!-- Cargamos hasta el último el JS porque necesitamos que existan los elementos HTML para que los obtengamos en el JS -->
+  <script src="app.js"></script>
+</html>
